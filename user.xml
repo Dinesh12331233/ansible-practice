@@ -1,0 +1,16 @@
+frontend and backend communicate with eachother in XML format.
+
+<user>
+    <username>DineshKancherla</username>
+    <password>Dinesh1233</password>
+
+</user>
+
+<user>
+    <username>DeepthiDurgam</username>
+    <password>DeepthiDinesh</password>
+
+
+</user>
+
+

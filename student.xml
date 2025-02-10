@@ -1,0 +1,68 @@
+writing student info in XML format
+
+<students>
+    <student>
+        <name>Dinesh kancherla</name>
+        <email>dineshkancherla8@gmail.com</email>
+        <addresses>
+            <perm_address>
+                <Door_no>1234</Door_no>
+                <street>Gandhi nagar</street>
+            </perm_address>
+            <current_address>
+                <Door_no>9876</Door_no>
+                <street>Nehru nagar</street>
+            </current_address>
+        </addresses>
+    </student>
+
+    <student>
+        <name>Dinesh kancherla</name>
+        <email>dineshkancherla8@gmail.com</email>
+        <addresses>
+            <perm_address>
+                <Door_no>1234</Door_no>
+                <street>Gandhi nagar</street>
+            </perm_address>
+            <current_address>
+                <Door_no>9876</Door_no>
+                <street>Nehru nagar</street>
+            </current_address>
+        </addresses>
+    </student>
+
+
+
+</students>
+
+<student>
+    <name>Dinesh kancherla</name>
+    <email>dineshkancherla8@gmail.com</email>
+    <addresses>
+        <perm_address>
+            <Door_no>1234</Door_no>
+            <street>Gandhi nagar</street>
+        </perm_address>
+        <current_address>
+            <Door_no>9876</Door_no>
+            <street>Nehru nagar</street>
+        </current_address>
+    </addresses>
+</student> 
+
+<student>
+    <name>Durgam Deepthi</name>
+    <email>durgamdeepthi@gmail.com</email>
+    <addresses>
+        <perm_address>
+            <Door_no>1234</Door_no>
+            <street>nehru nagar</street>
+        </perm_address>
+
+        <current_address>
+            <Door_no>9876</Door_no>
+            <street>Nehru nagar</street>
+        </current_address>
+    </addresses>
+
+</student>

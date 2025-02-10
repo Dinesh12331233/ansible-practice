@@ -1,0 +1,14 @@
+writing student info in YAML format
+
+- name: "Dinesh Kancherla"
+  email: dineshkancherla@gmail.com
+  addresses:
+  - type: "perm address"
+    Doorno: 1234
+    street: "nehru nagar"
+    city: guntur
+
+  - type: "current address"
+    Doorno: 3456
+    street: "gandhi nagar"
+    city: guntur  

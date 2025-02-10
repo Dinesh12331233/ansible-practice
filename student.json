@@ -1,0 +1,52 @@
+writing student info in JSON format
+
+{
+    "name": "Dinesh Kancherla",
+    "email": "dineshkancherla@gmail.com",
+    "addresses":
+    [
+        {
+            "type": "perm_address",
+            "Door_no": 1234,
+            "street": "gandhi nagar",
+            "city": "guntur"
+        },
+        {
+            "type": "current_address",
+            "Door_no": 3456,
+            "street": "nehru nagar",
+            "city": "guntur"
+
+        }
+    
+    
+    ]
+
+}
+
+
+
+{
+    "name": "Durgam Deepthi",
+    "email": "durgamdeepthi@gmail.com",
+    "addresses":
+    [
+        {
+            "type": "perm_address",
+            "Door_no": 1234,
+            "street": "gandhi nagar",
+            "city": "guntur"
+        }
+        
+        {
+            "type": "current_address",
+            "Door_no": 3456,
+            "street": "nehru nagar",
+            "city": "guntur"
+
+        }
+    
+    ]
+
+
+}
