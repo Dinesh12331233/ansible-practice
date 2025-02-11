@@ -1,6 +1,11 @@
-- name: hello playbook
-  hosts: backend
+- name: playbook name is helloworld
+  hosts: web
   tasks:
-  - name: print hello world
+  - name: task1 is print hello depthi
     ansible.builtin.debug:
-      msg: "Hello world to DEEPTHI"
+      msg: "Hello deepthi. now deepthi is in train"
+
+  - name: task2 is print hello dinesh 
+    ansible.builtin.debug:
+      msg: "hello dinesh. dinesh is in studyhall"  
+      
