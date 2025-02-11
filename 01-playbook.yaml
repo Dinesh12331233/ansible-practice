@@ -1,6 +1,7 @@
 - name: PING is the name of playbook
-  hosts: web
+  hosts: backend
   tasks:
   - name: Task is ping the server
     ansible.builtin.ping:
+    
        
