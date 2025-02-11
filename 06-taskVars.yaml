@@ -1,0 +1,20 @@
+- name: task variables
+  hosts: local
+  connection: local
+  vars: # play level variables
+    COURSE: "DevOps with AWS"
+    DURATION: 120HRS
+    TRAINER: sivakumar
+  tasks:
+  - name: print the variables from task1
+    vars: # task level variables
+      COURSE: ansible
+      DURATION: 10HRS
+      TRAINER: Dinesh
+    ansible.builtin.debug:
+      msg: "Course is {{ COURSE }}, Duration is {{ DURATION }}, Trainer is {{ TRAINER }}"
+
+  - name: print the variables from task2
+    ansible.buitlin.debug:
+      msg: "Course is {{ COURSE }}, Duration is {{ DURATION }}, Trainer is {{ TRAINER }}"
+      
