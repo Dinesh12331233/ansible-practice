@@ -1,5 +1,5 @@
 - name: playbook name is helloworld
-  hosts: web
+  hosts: backend
   tasks:
   - name: task1 is print hello depthi
     ansible.builtin.debug:
