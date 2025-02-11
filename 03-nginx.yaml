@@ -1,9 +1,9 @@
 - name: remove nginx
   hosts: web 
+  become: yes
   tasks:
 
   - name: remove nginx
     ansible.builtin.package:
       name: nginx
       state: absent
-      
