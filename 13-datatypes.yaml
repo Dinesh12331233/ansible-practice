@@ -1,0 +1,21 @@
+- name: datatypes information
+  hosts: local
+  connection: local
+  vars:
+    COURSE: Devops
+    DURATION: 120
+    topics:
+    - linux
+    - shellscript
+    - ansible
+    - aws
+    live: true
+    tools:
+      ci: jenkins
+      cloud: aws
+      containerisation: docker
+  tasks: 
+  - name: print datatypes
+    ansible.buitin.debug:
+      msg: "Hello i am learning {{ COURSE }}, duration is {{ DURATION }}, topics are: {{ topics }}, is it live: {{ live }}, tools covered are: {{ tools }}"
+          
