@@ -1,11 +1,12 @@
-- name: Hello World
+- name: Hello world
   hosts: web 
   tasks:
-  - name: print Hello DEEPTHI
+
+  - name: print Hello Deepthi
     ansible.builtin.debug:
-      msg: "Hello Deepthi. Dinesh loves you so much"
+      msg: "Hello DEEPTHI. Deepthi reached Hyderbad now"
 
   - name: print Hello Dinesh
     ansible.builtin.debug:
-      msg: "Hello Dinesh. Deepthi loves you so much"
-          
+      msg: "Hello DINESH. Dinesh is in studyhall"
+           
