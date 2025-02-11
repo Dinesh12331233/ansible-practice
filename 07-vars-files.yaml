@@ -1,10 +1,10 @@
 - name: variables from files
   hosts: local
   connection: local
-  vars_files: # take variables from this file
-  - course.yaml
+  vars_files:
+  - family.yaml
   tasks:
-  - name: print the variables from files
+  - name: print variables from files
     ansible.builtin.debug:
-      msg: "Course is {{ COURSE }}, Duration is {{ DURATION }}, Trainer is {{ TRAINER }}"
-
+      msg: "mother is {{ MOTHER }}, father is {{ FATHER }}, oldest_daughter is {{ DAUGHTER1 }}, eldest_daughter is {{ DAUGHTER2 }}"
+      
