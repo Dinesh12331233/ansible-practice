@@ -1,21 +1,25 @@
 - name: variables from prompt
-  hosts: local
+  hosts: local 
   connection: local
   vars_prompt:
-  - name: COURSE
-    prompt: Please enter the COURSE
+  - name: MOTHER 
+    prompt: Please enter the mother name
     private: false
 
-  - name: DURATION
-    prompt: Please enter the Duration
+  - name: FATHER
+    prompt: Please enter the father name
     private: false
 
-  - name: TRAINER 
-    prompt: Please enter the Trainer name
+  - name: DAUGHTER1
+    prompt: please enter the oldest daughter name
+    private: false
+
+  - name: DAUGHTER2
+    prompt: Please enter the eldest daughter name
     private: false
 
   tasks:
   - name: print the variables from prompt
     ansible.builtin.debug:
-      msg: "course is {{ COURSE }}, duration is {{ DURATION }}, trainer is {{ TRAINER }}"
-            
+      msg: "mother name is {{ MOTHER }}, father name is {{ FATHER }}, oldest daughter name is {{ DAUGHTER1 }}, eldest daughter name is {{ DAUGHTER2 }}"
+              
