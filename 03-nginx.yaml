@@ -1,9 +1,16 @@
-- name: remove nginx
+- name: install and run nginx
   hosts: web 
   become: yes
   tasks:
 
-  - name: remove nginx
+  - name: install nginx
     ansible.builtin.package:
       name: nginx
-      state: absent
+      state: present
+
+  - name: start the nginx
+    ansible.builtin.service:
+      name: nginx
+      state: started
+      enabled: yes
+          
