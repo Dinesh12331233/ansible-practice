@@ -1,0 +1,6 @@
+- name: PRINT # PLAY name 
+  hosts: local 
+  tasks:        # List of tasks
+  - name: printing hello world  # Name of TASK1
+    ansible.builtin.debug: 
+      msg: "Hello World" 

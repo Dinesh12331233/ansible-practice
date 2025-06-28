@@ -2,4 +2,7 @@
   hosts: frontend 
   tasks: #list of tasks
   - name: ping the server #name of task
-    ansible.builtin.ping: #task ni poorthi cheyyadaniki manamichina module
+    ansible.builtin.ping: #task ni poorthi cheyyadaniki manamichina module 
+
+
+#  ansible-playbook -i inventory.ini -e ansible_user=ec2-user -e ansible_password=DevOps321 01-playbook.yaml     
