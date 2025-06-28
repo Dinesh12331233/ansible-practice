@@ -1,0 +1,10 @@
+- name: PLAY1 
+  hosts: frontend 
+  tasks:
+  - name: installing nginx 
+    ansible.builtin.package: 
+      name: nginx 
+      state: present 
+
+# state: present -----> install cheyyamani
+# state: absent  -----> uninstall/remove cheyyamani      
