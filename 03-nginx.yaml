@@ -1,5 +1,6 @@
 - name: PLAY1 
   hosts: frontend 
+  become: yes # Tasks ni execute cheyyadaniki kavalsina privilages istundhi
   tasks:
   - name: installing nginx 
     ansible.builtin.package: 
