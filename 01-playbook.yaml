@@ -1,0 +1,5 @@
+- name: PLAY name is Ping #PLAY name
+  hosts: frontend 
+  tasks: #list of tasks
+  - name: ping the server #name of task
+    ansible.builtin.ping: #task ni poorthi cheyyadaniki manamichina module
