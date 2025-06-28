@@ -1,6 +1,10 @@
 - name: PRINT # PLAY name 
   hosts: local 
+  connection: local 
   tasks:        # List of tasks
   - name: printing hello world  # Name of TASK1
     ansible.builtin.debug: 
       msg: "Hello World" 
+
+
+#  ansible-playbook -i inventory.ini -e ansible_user=ec2-user -e ansible_password=DevOps321 02-hello-world.yaml ----> connection: local ani ivvanapudu ila ivvali.      
