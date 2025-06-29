@@ -1,0 +1,13 @@
+- name: PLAY-1
+  hosts: local 
+  connection: local 
+  tasks: 
+  - name: Task-1 ---> print some info 
+    ansible.builtin.debug: 
+      msg: "given number {{ NUMBER }} is lessthan or equal to 100" 
+    when: NUMBER <= 100 
+
+  - name: Task-2 ---> print some info 
+    ansible.builtin.debug: 
+      msg: "given number is graterthan 100" 
+    when: NUMBER > 100       

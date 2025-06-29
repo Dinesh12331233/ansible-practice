@@ -17,3 +17,7 @@
   - name: TASK-1 ---> print some info 
     ansible.builtin.debug: 
       msg: "course is {{ COURSE }}, Duration is {{ DURATION }}, is-live? {{ IS_LIVE }}, Tools are {{ TOOLS }}, Concepts are {{ CONCEPTS }}" 
+
+
+
+#  Tools are ['Linux', 'shell', 'ansible'], Concepts are {'CI': 'Jenkins', 'SCRIPTING': 'Shell, Ansible, Terraform, Python'}
