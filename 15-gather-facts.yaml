@@ -1,7 +1,7 @@
-- name: gathering facts 
+- name: PLAY-1 ---> gathering facts 
   hosts: local 
   connection: local 
   tasks: 
-  - name: print facts
+  - name: task-1 ---> print facts 
     ansible.builtin.debug: 
-    msg: "{{ ansible_facts  }}" 
+      msg: "{{ ansible_facts }}" 

@@ -7,7 +7,7 @@
   - name: Task-1 ---> print some info 
     ansible.builtin.debug: 
       msg: "Given number is {{ NUMBER }} is lessthan or equal to 100" 
-    when: NUMBER <= 100 
+    when: NUMBER <= 100 #task anedhi execute avvala vadha anedhi manam when keyword use chesi decide chestham.
 
   - name: Task-2 ----> print some info 
     ansible.builtin.debug: 
