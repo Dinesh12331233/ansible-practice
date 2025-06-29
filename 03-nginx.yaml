@@ -8,10 +8,11 @@
       state: present 
 
   - name: start nginx 
-    ansible.builtin.package: 
+    ansible.builtin.service: 
       name: nginx 
       state: started 
-      enable: yes
+      enable: yes 
 
+# ansible.builtin.package ki
 # state: present -----> install cheyyamani
 # state: absent  -----> uninstall/remove cheyyamani      
