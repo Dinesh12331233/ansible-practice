@@ -1,8 +1,8 @@
 - name: PLAY-1 
   hosts: local 
   connection: local 
-  vars: 
-    NUMBER: 78
+  # vars: 
+  #   NUMBER: 78
   tasks:
   - name: Task-1 ---> print some info 
     ansible.builtin.debug: 
