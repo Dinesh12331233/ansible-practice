@@ -1,0 +1,23 @@
+- name: PLAY-1 is Play level variables 
+  hosts: local 
+  connection: local 
+  vars: #play level variables or global variables means these variables are applicable to entire play
+    COURSE: Devops with AWS 
+    DURATION: 120 Hrs
+    TRAINER: sivakumar 
+  tasks: 
+  - name: PLAY-1 and TASK-1 ----> print some info
+    ansible.builtin.debug: 
+      msg: "Hello course is {{ COURSE }}, Duration is {{ DURATION }}, Trainer is {{ TRAINER }}" 
+
+  - name: PLAY-1 and TASK-2 ----> print some info 
+    ansible.builtin.debug:
+      msg: "Hello course is {{ COURSE }}, Duration is {{ DURATION }}, Trainer is {{ TRAINER }}" 
+
+- name: PLAY-2
+  hosts: local 
+  connection: local 
+  tasks: 
+  - name: PLAY-2 and TASK-1 ----> print some info 
+    ansible.builtin.debug:
+      msg: "Hello course is {{ COURSE }}, Duration is {{ DURATION }}, Trainer is {{ TRAINER }}" 
