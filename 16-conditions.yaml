@@ -1,0 +1,16 @@
+- name: writing playbook using ansible facts 
+  hosts: frontend 
+  become: yes 
+  tasks: 
+  - name: installing nginx if it is redhat 
+    ansible.builtin.dnf: 
+      name: nginx 
+      state: present 
+    when: ansible_os_family == "RedHat" 
+
+  - name: installing nginx if it is debian 
+    ansible.builtin.apt: 
+      name: nginx 
+      state: present 
+    when: ansible_os_family == "debian" 
+          
