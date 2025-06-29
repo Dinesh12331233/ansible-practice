@@ -2,16 +2,16 @@
   hosts: local 
   conection: local 
   vars: #play level variables 
-    GREETING: Hello from PLAY 
+    GREETING: "Hello from PLAY"
   vars_files:
   - course.yaml  
   vars_prompt: 
   - name: GREETING 
     prompt: enter greeting is 
-    private: false 
+    private: false  
   tasks: 
   - name: Task-1 ----> print some info 
     vars:
-      GREETING: hello from task 
+      GREETING: "hello from task" 
     ansible.builtin.debug: 
       msg: "Greeting is {{ GREETING }}"   
