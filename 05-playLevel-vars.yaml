@@ -1,7 +1,7 @@
 - name: PLAY-1 is Play level variables 
   hosts: local 
   connection: local 
-  vars: #play level variables or global variables means these variables are applicable to entire play
+  vars: #play level variables or global variables means these variables are applicable to entire PLAY-1 not applicable to PLAY-2 
     COURSE: Devops with AWS 
     DURATION: 120 Hrs
     TRAINER: sivakumar 
