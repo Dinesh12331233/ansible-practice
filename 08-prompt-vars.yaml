@@ -1,0 +1,21 @@
+- name: PLAY-1
+  hosts: local 
+  connection: local 
+  vars_prompt: 
+  - name: COURSE 
+    prompt: Course name is-
+    private: true 
+
+  - name: DURATION 
+    prompt: Duration is-
+    private: true 
+
+  - name: TRAINER 
+    prompt: Trainer is- 
+    private: true 
+
+  tasks:
+  - name: TASK-1 ----> print some info 
+    ansible.builtin.debug:
+      msg: "Hello course is {{ COURSE }}, Duration is {{ DURATION }}, Trainer is {{ TRAINER }}" 
+      
